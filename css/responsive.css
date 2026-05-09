@@ -1,0 +1,40 @@
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .hero-grid, .about-grid, .contact-grid, .footer-grid, .products-grid { grid-template-columns: 1fr; }
+  .hero-panel { display: none; }
+  .form-row   { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .hero-stats { gap: 28px; }
+
+  /* Carousel responsive */
+  .hc-track    { height: 75vh; min-height: 480px; }
+  .hc-content  { padding: 60px 0 90px; }
+  .hc-stats    { gap: 0; padding: 14px 0; }
+  .hc-stat     { padding: 0 20px; }
+  .hc-stat strong { font-size: 20px; }
+  .hc-stat span   { font-size: 10px; }
+  .hc-stat-div    { height: 28px; }
+  .hc-arrow    { width: 42px; height: 42px; }
+  .hc-prev     { left: 14px; }
+  .hc-next     { right: 14px; }
+  .testi-track .glass.testi-card { padding: 24px; }
+}
+
+@media (max-width: 640px) {
+  .section      { padding: 72px 0; }
+  .nav-links, .nav-phone { display: none; }
+  .footer-grid  { grid-template-columns: 1fr; }
+  .client-logos { gap: 24px; }
+  .hero h1      { font-size: 36px; }
+
+  /* Carousel small */
+  .hc-track    { height: 70vh; min-height: 420px; }
+  .hc-title    { font-size: 30px; }
+  .hc-subtitle { font-size: 15px; }
+  .hc-btns     { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .hc-arrow    { display: none; }
+  .hc-stat-div { display: none; }
+  .hc-stat     { padding: 0 14px; }
+  .hc-stat strong { font-size: 18px; }
+  .hc-dots     { bottom: 72px; }
+}

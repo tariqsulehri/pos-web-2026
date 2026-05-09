@@ -1,0 +1,61 @@
+/* ── ANIMATED BACKGROUND ── */
+.orb {
+  position: absolute; border-radius: 50%; filter: blur(80px);
+  pointer-events: none; z-index: 0;
+  animation: float 8s ease-in-out infinite;
+}
+@keyframes float {
+  0%,100% { transform: translateY(0) scale(1); }
+  50%      { transform: translateY(-30px) scale(1.05); }
+}
+@keyframes floatR {
+  0%,100% { transform: translateY(0) scale(1); }
+  50%      { transform: translateY(30px) scale(0.97); }
+}
+@keyframes pulse-glow {
+  0%,100% { opacity: 0.5; }
+  50%      { opacity: 1; }
+}
+@keyframes gradient-shift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes slideLeft {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+@keyframes shimmer {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+@keyframes blink {
+  0%,100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+
+/* ── SCROLL ANIMATIONS ── */
+.reveal   { opacity: 0; transform: translateY(28px);  transition: opacity .7s ease, transform .7s ease; }
+.reveal-l { opacity: 0; transform: translateX(-28px); transition: opacity .7s ease, transform .7s ease; }
+.reveal-r { opacity: 0; transform: translateX(28px);  transition: opacity .7s ease, transform .7s ease; }
+.reveal.visible,
+.reveal-l.visible,
+.reveal-r.visible { opacity: 1; transform: translate(0); }
+
+.delay-1 { transition-delay: .1s; }
+.delay-2 { transition-delay: .2s; }
+.delay-3 { transition-delay: .3s; }
+.delay-4 { transition-delay: .4s; }
+.delay-5 { transition-delay: .5s; }
+.delay-6 { transition-delay: .6s; }
