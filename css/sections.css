@@ -77,7 +77,7 @@ nav.scrolled {
   display: inline-flex; align-items: center; gap: 8px;
   background: rgba(99,102,241,.1); border: 1px solid rgba(99,102,241,.25);
   color: #C7D2FE; font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
-  padding: 7px 16px; border-radius: 999px; margin-bottom: 28px;
+  padding: 7px 16px; border-radius: 999px; margin-bottom: 16px;
   animation: fadeIn .8s ease forwards;
 }
 .hero-eyebrow-dot {
@@ -347,7 +347,7 @@ footer { background: var(--bg); border-top: 1px solid rgba(255,255,255,.05); pad
 }
 .hc-track {
   display: flex;
-  height: 88vh; min-height: 560px; max-height: 820px;
+  height: 68vh; min-height: 460px; max-height: 660px;
   transition: transform .75s cubic-bezier(.25,.46,.45,.94);
   will-change: transform;
 }
@@ -368,7 +368,7 @@ footer { background: var(--bg); border-top: 1px solid rgba(255,255,255,.05); pad
 }
 .hc-content {
   position: relative; z-index: 1;
-  max-width: 680px; padding: 88px 0;
+  max-width: 680px; padding: 52px 0;
 }
 .hc-slide.active .hc-content { animation: hcIn .8s ease both; }
 @keyframes hcIn {
@@ -377,14 +377,14 @@ footer { background: var(--bg); border-top: 1px solid rgba(255,255,255,.05); pad
 }
 .hc-title {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: clamp(34px, 5vw, 62px);
-  font-weight: 700; line-height: 1.08;
+  font-size: clamp(28px, 4vw, 50px);
+  font-weight: 700; line-height: 1.1;
   letter-spacing: -.03em; color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 .hc-subtitle {
-  font-size: 17px; color: rgba(255,255,255,.76);
-  line-height: 1.82; max-width: 520px; margin-bottom: 36px;
+  font-size: 15px; color: rgba(255,255,255,.76);
+  line-height: 1.75; max-width: 520px; margin-bottom: 24px;
 }
 .hc-btns { display: flex; gap: 12px; flex-wrap: wrap; }
 
